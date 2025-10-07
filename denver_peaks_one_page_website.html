@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Denver Peaks | Official Team Site</title>
+  <meta name="description" content="Official website of the Denver Peaks — schedule, roster, tickets, and sponsorship." />
+  <style>
+    :root{
+      --navy:#0d2740; /* deep navy */
+      --orange:#c46b22; /* copper/orange accent */
+      --ice:#e9eef3; /* light text */
+      --ink:#0b1520; /* dark text */
+      --muted:#93a3b5;
+      --card:#0f3355; /* card navy */
+      --ring: rgba(196,107,34,.35);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--navy);color:var(--ice);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--ice);text-decoration:none}
+    img{max-width:100%;height:auto}
+    .container{width:min(1100px, 92%);margin-inline:auto}
+    .btn{display:inline-block;padding:.75rem 1rem;border-radius:999px;border:2px solid var(--orange);color:var(--ice);font-weight:700;letter-spacing:.3px}
+    .btn:hover{background:var(--orange);color:#081828}
+    header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg, rgba(8,24,40,.95), rgba(8,24,40,.75));backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:.6rem 0}
+    nav .brand{display:flex;gap:.6rem;align-items:center;font-weight:900;letter-spacing:.5px}
+    nav img{width:40px;height:40px;border-radius:10px;background:#122b47;border:1px solid rgba(255,255,255,.08);object-fit:cover}
+    nav ul{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+    nav a{opacity:.9}
+    nav a:hover{opacity:1}
+
+    .hero{padding:72px 0 48px;background:
+      radial-gradient(1200px 400px at 50% -50%, rgba(196,107,34,.18), transparent 60%),
+      linear-gradient(180deg, #0c2238 0%, #0d2740 60%);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+    .badge{display:inline-flex;gap:.5rem;align-items:center;padding:.35rem .6rem;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);font-size:.85rem}
+    h1{font-size:clamp(2.2rem, 4vw, 3.3rem);line-height:1.15;margin:.5rem 0 .75rem}
+    .subtitle{color:var(--muted);max-width:55ch}
+    .hero-card{background:var(--card);border:1px solid rgba(255,255,255,.08);padding:1rem;border-radius:var(--radius);box-shadow:0 20px 60px rgba(0,0,0,.25)}
+    .hero-card h3{margin:.5rem 0 0}
+    .grid{display:grid;gap:1rem}
+    @media (max-width:920px){.hero .wrap{grid-template-columns:1fr}}
+
+    section{padding:56px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+    section h2{font-size:clamp(1.6rem,3vw,2.2rem);margin:0 0 .5rem}
+    .kicker{color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem}
+
+    .cards{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem}
+    .card{grid-column:span 6;background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:1rem}
+    .card h3{margin:.25rem 0 .5rem}
+    .card p{color:var(--ice);opacity:.9}
+    .card .meta{color:var(--muted);font-size:.9rem}
+    @media (max-width:900px){.card{grid-column:span 12}}
+
+    table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);overflow:hidden}
+    th,td{padding:.8rem;border-bottom:1px solid rgba(255,255,255,.08)}
+    th{text-align:left;color:var(--muted);font-weight:700}
+    tbody tr:hover{background:#13385c}
+
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .tier{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:1rem}
+    .tier strong{font-size:1.4rem}
+    @media (max-width:900px){.pricing{grid-template-columns:1fr}}
+
+    .footer{padding:28px 0;color:var(--muted);font-size:.9rem}
+    .tag{display:inline-block;padding:.25rem .5rem;background:rgba(196,107,34,.18);border:1px solid var(--ring);border-radius:6px;color:#ffd5b0}
+    .sp{height:1px;background:linear-gradient(90deg, transparent, rgba(255,255,255,.2), transparent);margin:24px 0}
+    .download-links a{display:inline-block;margin-right:.6rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#top" aria-label="Denver Peaks home">
+          <!-- Replace src with your exported logo path -->
+          <img src="images/logo.png" alt="Denver Peaks logo" />
+          <span>Denver Peaks</span>
+        </a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#roster">Roster</a></li>
+          <li><a href="#stadium">Tickets</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#sponsors">Sponsorship</a></li>
+          <li><a class="btn" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Intro">
+      <div class="container">
+        <div class="wrap">
+          <div>
+            <span class="badge">NBA • Western Conference • Denver, CO</span>
+            <h1>Welcome to the <span style="color:var(--orange)">Denver Peaks</span></h1>
+            <p class="subtitle">Home of <strong>Summit</strong> the mascot and the loudest fans at <strong>Peaks Arena</strong>. Explore the roster, grab tickets, and get hyped for Opening Night.</p>
+            <p style="margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap">
+              <a class="btn" href="#tickets">Buy Tickets</a>
+              <a class="btn" href="#schedule" style="border-color:#5aa1ff">View Schedule</a>
+            </p>
+          </div>
+          <aside class="hero-card">
+            <div class="kicker">Team Basics</div>
+            <h3>City • Name • Mascot</h3>
+            <div class="sp"></div>
+            <div class="grid" style="grid-template-columns:1fr 1fr">
+              <div>
+                <div class="meta">City</div>
+                <strong>Denver</strong>
+              </div>
+              <div>
+                <div class="meta">Team</div>
+                <strong>Denver Peaks</strong>
+              </div>
+              <div>
+                <div class="meta">Mascot</div>
+                <strong>Summit</strong>
+              </div>
+              <div>
+                <div class="meta">Arena</div>
+                <strong>Peaks Arena</strong>
+              </div>
+            </div>
+            <div class="sp"></div>
+            <div class="meta">Target Market</div>
+            <p style="margin:.25rem 0 0">Denver metro families and young professionals (ages 12–45), outdoor/fitness lifestyle, high social engagement; regional fans across CO/UT/NM.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="kicker">About</div>
+        <h2>Our Identity</h2>
+        <p>The Peaks brand merges <em>mountain grit</em> with <em>fast-break energy</em>. Team colors feature Deep Navy, Copper Orange, and Ice White. The wordmark emphasizes altitude and ascent.</p>
+        <div class="cards" style="margin-top:1rem">
+          <article class="card">
+            <h3>Brand Assets</h3>
+            <p>Download the primary logo, secondary mark, and wordmark for approved use in class materials.</p>
+            <div class="download-links">
+              <a href="#" class="tag">Primary Logo PNG</a>
+              <a href="#" class="tag">Wordmark SVG</a>
+              <a href="#" class="tag">Color Guide</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Community</h3>
+            <p>We partner with outdoor non‑profits and youth hoops clinics. Sponsors align with healthy, high‑altitude living.</p>
+            <p class="meta">Contact PR for appearance requests.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="roster">
+      <div class="container">
+        <div class="kicker">Team</div>
+        <h2>Roster & Salary Cap</h2>
+        <p class="meta">Cap: $119.2M • 12 players • Include Head Coach</p>
+        <table aria-label="Roster table">
+          <thead>
+            <tr>
+              <th>First</th><th>Last</th><th>Pos</th><th>Ht</th><th>Wt</th><th>Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>—</td><td>—</td><td>G</td><td>—</td><td>—</td><td>$ —</td></tr>
+            <tr><td>—</td><td>—</td><td>F</td><td>—</td><td>—</td><td>$ —</td></tr>
+            <tr><td colspan="5"><strong>Total</strong></td><td><strong>$ —</strong></td></tr>
+          </tbody>
+        </table>
+        <p class="meta" style="margin-top:.5rem">Tip: replace with your spreadsheet export or paste rows here. Keep the total under the cap.</p>
+      </div>
+    </section>
+
+    <section id="stadium">
+      <div class="container">
+        <div class="kicker">Tickets</div>
+        <h2>Peaks Arena Seating & Pricing</h2>
+        <div class="cards" style="margin-top:1rem">
+          <div class="card" style="grid-column:span 7">
+            <h3>Seating Map</h3>
+            <p class="meta">Upload your diagram image (PNG/JPG) and update the src below.</p>
+            <img src="images/seating-map.png" alt="Peaks Arena seating chart placeholder" />
+          </div>
+          <div class="card" style="grid-column:span 5">
+            <h3>Pricing (per game)</h3>
+            <div class="pricing">
+              <div class="tier"><div class="meta">Premium</div><strong>$150</strong><div>Lower bowl center, club access</div></div>
+              <div class="tier"><div class="meta">Average</div><strong>$85</strong><div>Sidelines and corners</div></div>
+              <div class="tier"><div class="meta">Budget</div><strong>$35</strong><div>Upper bowl + student</div></div>
+            </div>
+            <div class="sp"></div>
+            <h3 id="tickets">Season Tickets</h3>
+            <div class="pricing">
+              <div class="tier"><div class="meta">Premium</div><strong>$4,500</strong><div>Includes VIP event & merch pack</div></div>
+              <div class="tier"><div class="meta">Average</div><strong>$2,500</strong><div>Payment plan available</div></div>
+              <div class="tier"><div class="meta">Budget</div><strong>$950</strong><div>Family bundle pricing</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <div class="container">
+        <div class="kicker">Schedule</div>
+        <h2>November 2025</h2>
+        <table aria-label="Game schedule">
+          <thead><tr><th>Date</th><th>Opponent</th><th>Location</th><th>Time</th></tr></thead>
+          <tbody>
+            <tr><td>Nov 1</td><td>Los Angeles Lakers</td><td>Peaks Arena</td><td>7:00 PM</td></tr>
+            <tr><td>Nov 3</td><td>Phoenix Suns</td><td>Away</td><td>6:30 PM</td></tr>
+            <tr><td>Nov 6</td><td>Golden State Warriors</td><td>Peaks Arena</td><td>7:00 PM</td></tr>
+            <tr><td>Nov 9</td><td>Dallas Mavericks</td><td>Away</td><td>7:30 PM</td></tr>
+            <tr><td>Nov 11</td><td>Chicago Bulls</td><td>Peaks Arena</td><td>7:00 PM</td></tr>
+            <tr><td>Nov 14</td><td>Miami Heat</td><td>Away</td><td>6:00 PM</td></tr>
+            <tr><td>Nov 16</td><td>New York Knicks</td><td>Peaks Arena</td><td>7:30 PM</td></tr>
+            <tr><td>Nov 20</td><td>San Antonio Spurs</td><td>Peaks Arena</td><td>7:00 PM</td></tr>
+            <tr><td>Nov 23</td><td>Portland Trail Blazers</td><td>Away</td><td>8:00 PM</td></tr>
+            <tr><td>Nov 25</td><td>Minnesota Timberwolves</td><td>Peaks Arena</td><td>7:00 PM</td></tr>
+            <tr><td>Nov 28</td><td>Houston Rockets</td><td>Away</td><td>7:00 PM</td></tr>
+            <tr><td>Nov 30</td><td>Boston Celtics</td><td>Peaks Arena</td><td>7:30 PM</td></tr>
+          </tbody>
+        </table>
+        <p class="meta" style="margin-top:.5rem">Prefer a poster? Export your schedule graphic and link it here:</p>
+        <p><a class="tag" href="images/denver-peaks-schedule.png">Schedule Poster PNG</a></p>
+      </div>
+    </section>
+
+    <section id="media">
+      <div class="container">
+        <div class="kicker">Media</div>
+        <h2>Intro Audio • Jumbotron Video</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Pre‑Game Announcement (Audio)</h3>
+            <audio controls src="media/pregame-announcement.mp3" style="width:100%"></audio>
+            <p class="meta">Upload your MP3 and update the <code>src</code>.</p>
+          </div>
+          <div class="card">
+            <h3>Jumbotron Intro (Video)</h3>
+            <video controls width="100%" poster="images/video-poster.jpg">
+              <source src="media/jumbotron-intro.mp4" type="video/mp4" />
+            </video>
+            <p class="meta">Upload your MP4 and update the <code>src</code>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsors">
+      <div class="container">
+        <div class="kicker">Sponsorship</div>
+        <h2>Promotion & Sponsorship Deck</h2>
+        <p>Our presentation outlines target sponsors, event advertising, social media plan, sales promotions, PR, and benefits.</p>
+        <p><a class="btn" href="docs/Denver-Peaks-Sponsorship.pdf">View Presentation (PDF)</a></p>
+        <div class="cards" style="margin-top:1rem">
+          <div class="card">
+            <h3>Target Categories</h3>
+            <p>Outdoor gear, energy drinks, local tech, airlines, healthcare, education.</p>
+          </div>
+          <div class="card">
+            <h3>Sales Opportunities</h3>
+            <p>In‑arena activations, branded segments, jersey patch, digital content, community events, VIP hospitality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="kicker">Contact</div>
+        <h2>Get in Touch</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Front Office</h3>
+            <p class="meta">General Manager</p>
+            <p><strong>Your Name</strong><br> gm@denverpeaks.example • (555) 123‑4567</p>
+          </div>
+          <div class="card">
+            <h3>Media & PR</h3>
+            <p class="meta">Public Relations Coordinator</p>
+            <p>press@denverpeaks.example</p>
+          </div>
+          <div class="card">
+            <h3>Partnerships</h3>
+            <p class="meta">Marketing & Sponsorships</p>
+            <p>partners@denverpeaks.example</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2025 Denver Peaks • This is a student project. All names/logos used for demonstration only.
+    </div>
+  </footer>
+</body>
+</html>
